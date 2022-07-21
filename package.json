@@ -1,0 +1,14 @@
+{
+  "name": "qazando-automation",
+  "version": "1.0.0",
+  "description": "Projeto de testes automatizados qazando",
+  "scripts": {
+    "android": "npx codeceptjs run --steps"
+  },
+  "author": "Thairam Michel",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^2.6.5",
+    "webdriverio": "^6.1.11"
+  }
+}
