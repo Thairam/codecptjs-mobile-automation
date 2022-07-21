@@ -19,7 +19,7 @@ Appium: {
 
 > 2° Passo: Execute o appium
 
-> 3° Passo: Inicie o simulador
+> 3° Passo: Inicie o emulador
 
 > 4° Passo: Execute o comando:
 ```
