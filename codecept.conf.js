@@ -19,8 +19,8 @@ exports.config = {
     home_page: './pages/home_page.js',
   },
   mocha: {},
-  bootstrap: './server.js',
-  teardown: './server.js',
+  bootstrap: './server/server.js',
+  teardown: './server/server.js',
   plugins: {
     screenshotOnFail: {
       enabled: true
