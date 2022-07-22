@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "Projeto de testes automatizados qazando",
   "scripts": {
-    "android": "npx codeceptjs run --steps"
+    "android": "npx codeceptjs run --reporter mochawesome --steps",
+    "generate:new-steps": "npx codeceptjs gherkin:snippets"
   },
   "author": "Thairam Michel",
   "license": "ISC",
   "dependencies": {
     "codeceptjs": "^2.6.5",
+    "mochawesome": "^6.1.1",
     "webdriverio": "^6.1.11"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1"
   }
 }
