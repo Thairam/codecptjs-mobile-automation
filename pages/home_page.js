@@ -1,4 +1,9 @@
-const { I } = inject();
+const { I } = inject()
+const name = require('../utils/name')
+const code = require('../utils/code')
+
+const getCode = code.getCode()
+const getName = name.getName()
 
 module.exports = {
   buttons: {
@@ -13,10 +18,16 @@ module.exports = {
     studentIOS: (check) => ''
   },
 
-  registerStudent(code, name) {
-    I.fillField(this.fieds.code, code)
-    I.fillField(this.fieds.name, name)
+  registerStudent() {
+    I.fillField(this.fieds.code, getCode)
+    I.fillField(this.fieds.name, getName)
     I.tap(this.buttons.save)
+  },
+
+  validateStudentBeenRegistered() {
+    I.fillField(this.fieds.search, getName)
+    I.runOnAndroid(() => I.seeElement(this.fieds.studentAndroid(getCode)))
+    I.runOnIOS(() => I.seeElement(this.fieds.studentIOS(getCode)))    
   },
 
   searchStudent(search, check) {

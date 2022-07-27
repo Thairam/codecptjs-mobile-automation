@@ -29,7 +29,10 @@ exports.config = {
   hooks: [],
   gherkin: {
     features: './features/*.feature',
-    steps: ['./step_definitions/steps.js']
+    steps: [
+      './steps/login_step.js',
+      './steps/student_step.js'
+    ]
   },
   plugins: {
     screenshotOnFail: {
@@ -40,5 +43,5 @@ exports.config = {
     }
   },
   name: 'qazando-automation',
-  tests: './steps/*_test.js',
+  tests: './features/*.feature',
 }

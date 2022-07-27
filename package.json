@@ -4,6 +4,7 @@
   "description": "Projeto de testes automatizados qazando",
   "scripts": {
     "android": "npx codeceptjs run --reporter mochawesome --steps",
+    "android:tag": "npx codeceptjs run --reporter mochawesome --steps --grep @login_success",
     "generate:new-steps": "npx codeceptjs gherkin:snippets"
   },
   "author": "Thairam Michel",
