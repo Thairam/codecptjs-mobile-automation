@@ -4,7 +4,7 @@ const { login_page, home_page } = inject()
 const name = require('../Utils/name')
 const code = require('../Utils/code')
 
-Scenario('Add student with success', (I) => {
+Scenario('Add student with success', ({ I }) => {
   const getCode = code.getCode()
   const getName = name.getName()
 

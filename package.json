@@ -9,7 +9,7 @@
   "author": "Thairam Michel",
   "license": "ISC",
   "dependencies": {
-    "codeceptjs": "^2.6.5",
+    "codeceptjs": "^3.3.4",
     "mochawesome": "^6.1.1",
     "webdriverio": "^6.1.11"
   },

@@ -1,9 +1,9 @@
 module.exports = {
-  bootstrap: function () {
+  start: function () {
     console.log('bootstrap')
   },
 
-  teardown: function () {
+  stop: function () {
     console.log('teardown')
   }
 }
